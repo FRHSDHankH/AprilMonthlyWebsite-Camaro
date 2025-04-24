@@ -24,19 +24,29 @@
   width: 100vw;
 }
 
-.oramac-lg {
+.oramac-1 {
   font-family: Oramac;
   font-size: 10vw;
 }
 
-.oramac {
+.oramac-2 {
   font-family: Oramac;
   font-size: 7.5vw;
 }
 
-.oramac-sm {
+.oramac-3 {
   font-family: Oramac;
   font-size: 5vw;
+}
+
+.oramac-4 {
+  font-family: Oramac;
+  font-size: 3.75vw;
+}
+
+.oramac-5 {
+  font-family: Oramac;
+  font-size: 2.5vw;
 }
 
 #myProgress {
@@ -57,4 +67,84 @@ a {
 
 .vid {
   height: 50vh;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.slideDown {
+  transform: translateY(0vh);
+  transition: transform 2s, scale 0.2s;
+  @starting-style {
+    transform: translateY(-100vh);
+  }
+}
+
+.slideUp {
+  transform: translateY(0vh);
+  transition: transform 2s, scale 0.2s;
+  @starting-style {
+    transform: translateY(100vh);
+  }
+}
+
+.slideLeft {
+  transform: translateX(0vw);
+  transition: transform 2s, scale 0.2s;
+  @starting-style {
+    transform: translateX(100vw);
+  }
+}
+
+.slideRight {
+  transform: translateX(0vw);
+  transition: transform 2s, scale 0.2s;
+  @starting-style {
+    transform: translateX(-100vw);
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 28.125%;
+  overflow: hidden;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .video-wrapper {
+    padding-top: 42.86%;
+  }
+
+  .oramac-4 {
+    font-size: 6vw;
+  }
+
+  .oramac-5 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-wrapper {
+    padding-top: 42.86%;
+  }
+
+  .oramac-4 {
+    font-size: 7vw;
+  }
+
+  .oramac-5 {
+    font-size: 5vw;
+  }
 }
