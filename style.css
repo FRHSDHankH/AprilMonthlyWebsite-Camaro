@@ -3,8 +3,17 @@
   src: url(Oramac/oramac.ttf);
 }
 
+@font-face {
+  font-family: OramacLight;
+  src: url(Oramac/oramaclight.ttf);
+}
+
 .bg-333 {
   background-color: #333;
+}
+
+.bg-666 {
+  background-color: #666;
 }
 
 .scale {
@@ -22,6 +31,11 @@
 .size {
   height: 100vh;
   width: 100vw;
+}
+
+.oramac-ss {
+  font-family: OramacLight;
+  font-size: 1.25vw;
 }
 
 .oramac-1 {
@@ -133,6 +147,10 @@ a {
   .oramac-5 {
     font-size: 4vw;
   }
+
+  .oramac-ss {
+    font-size: 2vw;
+  }
 }
 
 @media (max-width: 768px) {
@@ -146,5 +164,9 @@ a {
 
   .oramac-5 {
     font-size: 5vw;
+  }
+
+  .oramac-ss {
+    font-size: 3vw;
   }
 }
