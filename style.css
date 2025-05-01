@@ -123,6 +123,16 @@ a {
   }
 }
 
+.fadeIn {
+  scale: 1;
+  opacity: 1;
+  transition: 2s;
+  @starting-style {
+    scale: 0.5;
+    opacity: 0.5;
+  }
+}
+
 .video-wrapper {
   position: relative;
   width: 100%;
