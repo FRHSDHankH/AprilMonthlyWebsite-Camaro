@@ -87,6 +87,10 @@ a {
   cursor: pointer;
 }
 
+.zoom:hover {
+  cursor: zoom-in;
+}
+
 .slideDown {
   transform: translateY(0vh);
   transition: transform 2s, scale 0.2s;
