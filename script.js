@@ -21,3 +21,25 @@ function move() {
   
 }
 move()
+
+let header = document.getElementById('header');
+let main = document.getElementById('main');
+let footer = document.getElementById('footer');
+
+function info(generation) {
+  let gen = document.getElementById(generation);
+  
+  header.classList.add('d-none');
+  main.classList.add('d-none');
+  footer.classList.add('d-none');
+  gen.classList.remove('d-none');
+}
+
+function close(generation) {
+  let gen = document.getElementById(generation);
+  
+  header.classList.remove('d-none');
+  main.classList.remove('d-none');
+  footer.classList.remove('d-none');
+  gen.classList.add('d-none');
+}

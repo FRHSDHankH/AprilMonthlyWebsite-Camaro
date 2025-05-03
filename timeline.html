@@ -20,7 +20,7 @@
   </head>
 
   <body class="bg-black overflow-x-hidden">
-    <header class="">
+    <header class="" id="header">
       <nav class="navbar navbar-dark bg-body-transparent text-black">
         <div class="container-fluid d-flex align-items-center justify-content-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -48,7 +48,7 @@
         </div>
       </nav>
     </header>
-    <main class="">
+    <main class="" id="main">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 d-flex align-items-center justify-content-center text-center oramac-3 text-white text-decoration-underline slideDown">
@@ -65,7 +65,7 @@
                 <hr class="border border-1 border-white opacity-100 w-100">
               </div>
               <div class="col-9 p-0 text-start">
-                <img src="imgs/Gen1.jpg" class="img-fluid w-50 zoom rounded border border-2 border-white">
+                <button class="bg-transparent border border-0 w-50 p-0" onclick="info('gen1')"><img src="imgs/Gen1.jpg" class="img-fluid zoom rounded border border-2 border-white"></button>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@
           <div class="col-6 border-end border-1 border-white">
             <div class="row">
               <div class="col-9 p-0 text-end">
-                <img src="imgs/Gen2.jpg" class="img-fluid w-50 zoom rounded border border-2 border-white">
+                <button class="bg-transparent border border-0 w-50 p-0" onclick="info('gen2')"><img src="imgs/Gen2.jpg" class="img-fluid zoom rounded border border-2 border-white"></button>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center text-center p-0">
                 <hr class="border border-1 border-white opacity-100 w-100">
@@ -91,7 +91,7 @@
                 <hr class="border border-1 border-white opacity-100 w-100">
               </div>
               <div class="col-9 p-0 text-start">
-                <img src="imgs/Gen3.jpg" class="img-fluid w-50 zoom rounded border border-2 border-white">
+                <button class="bg-transparent border border-0 w-50 p-0" onclick="info('gen3')"><img src="imgs/Gen3.jpg" class="img-fluid zoom rounded border border-2 border-white"></button>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@
           <div class="col-6 border-end border-1 border-white">
             <div class="row">
               <div class="col-9 p-0 text-end">
-                <img src="imgs/Gen4.jpg" class="img-fluid w-50 zoom rounded border border-2 border-white">
+                <button class="bg-transparent border border-0 w-50 p-0" onclick="info('gen4')"><img src="imgs/Gen4.jpg" class="img-fluid zoom rounded border border-2 border-white"></button>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center text-center p-0">
                 <hr class="border border-1 border-white opacity-100 w-100">
@@ -117,7 +117,7 @@
                 <hr class="border border-1 border-white opacity-100 w-100">
               </div>
               <div class="col-9 p-0 text-start">
-                <img src="imgs/Gen5.jpg" class="img-fluid w-50 zoom rounded border border-2 border-white">
+                <button class="bg-transparent border border-0 w-50 p-0" onclick="info('gen5')"><img src="imgs/Gen5.jpg" class="img-fluid zoom rounded border border-2 border-white"></button>
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@
           <div class="col-6 border-end border-1 border-white">
             <div class="row">
               <div class="col-9 p-0 text-end">
-                <img src="imgs/Gen6.jpg" class="img-fluid w-50 zoom rounded border border-2 border-white">
+                <button class="bg-transparent border border-0 w-50 p-0" onclick="info('gen6')"><img src="imgs/Gen6.jpg" class="img-fluid zoom rounded border border-2 border-white"></button>
               </div>
               <div class="col-3 d-flex align-items-center justify-content-center text-center p-0">
                 <hr class="border border-1 border-white opacity-100 w-100">
@@ -139,215 +139,233 @@
     </main>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center position-absolute top-0 size fadeIn d-none" id="gen1">
       <img src="imgs/Gen1.jpg" class="img-fluid opacity-50 h-100 position-absolute z-0">
-      <div class="container">
+      <div class="container position-absolute z-1">
         <div class="oramac-3 text-white">
-          1st Gen Camaro
+          1st Generation (1967–1969)
         </div>
         <div class="oramac-ss text-white">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Debuted as Chevrolet’s answer to the Ford Mustang.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Came with over 80 factory options, including the legendary SS and Z/28 trims.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              The RS package included hidden headlights—very cool for the time.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              The Z/28 was built to qualify for Trans-Am racing with a high-revving 302 V8.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Convertible versions were available right from the start.
             </li>
           </ul>
         </div>
+        <button class="btn btn-transparent border border-1 border-white text-white text-center oramac-ss scale" onclick="close('gen1')">
+          Close
+        </button>
       </div>
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center position-absolute top-0 size fadeIn d-none" id="gen2">
       <img src="imgs/Gen2.jpg" class="img-fluid opacity-50 h-100 position-absolute z-0">
-      <div class="container">
+      <div class="container position-absolute z-1">
         <div class="oramac-3 text-white">
-          2nd Gen Camaro
+          2nd Generation (1970–1981)
         </div>
         <div class="oramac-ss text-white">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Had a longer production run than any other Camaro generation.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              The styling became more European-inspired, with a sleeker body.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              1977 marked the first year Camaro outsold the Mustang.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              The Z/28 was dropped in 1975 but revived in 1977 due to fan demand.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Big bumpers appeared in 1974 to comply with federal crash standards.
             </li>
           </ul>
         </div>
+        <button class="btn btn-transparent border border-1 border-white text-white text-center oramac-ss scale" onclick="close('gen2')">
+          Close
+        </button>
       </div>
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center position-absolute top-0 size fadeIn d-none" id="gen3">
       <img src="imgs/Gen3.jpg" class="img-fluid opacity-50 h-100 position-absolute z-0">
-      <div class="container">
+      <div class="container position-absolute z-1">
         <div class="oramac-3 text-white">
-          3rd Gen Camaro
+          3rd Generation (1982–1992)
         </div>
         <div class="oramac-ss text-white">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              First Camaro with fuel injection, a hatchback, and a 4-cylinder option.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Introduced the Camaro IROC-Z in 1985, named after the racing series.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Featured a fully redesigned chassis with MacPherson struts up front.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Was the first Camaro to offer a 5-speed manual transmission.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Convertible made a comeback in 1987 after a long hiatus.
             </li>
           </ul>
         </div>
+        <button class="btn btn-transparent border border-1 border-white text-white text-center oramac-ss scale" onclick="close('gen3')">
+          Close
+        </button>
       </div>
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center position-absolute top-0 size fadeIn d-none" id="gen4">
       <img src="imgs/Gen4.jpg" class="img-fluid opacity-50 h-100 position-absolute z-0">
-      <div class="container">
+      <div class="container position-absolute z-1">
         <div class="oramac-3 text-white">
-          4th Gen Camaro
+          4th Generation (1993–2002)
         </div>
         <div class="oramac-ss text-white">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              First Camaro to use plastic body panels (on the front fenders).
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Shared the LT1 and later LS1 V8 engines with the Corvette.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Offered a “SS” model with SLP Engineering upgrades—making it a true sleeper.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Had the longest hood of any Camaro generation.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Final year (2002) marked Camaro’s 35th anniversary and the end—temporarily.
             </li>
           </ul>
         </div>
+        <button class="btn btn-transparent border border-1 border-white text-white text-center oramac-ss scale" onclick="close('gen4')">
+          Close
+        </button>
       </div>
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center position-absolute top-0 size fadeIn d-none" id="gen5">
       <img src="imgs/Gen5.jpg" class="img-fluid opacity-50 h-100 position-absolute z-0">
-      <div class="container">
+      <div class="container position-absolute z-1">
         <div class="oramac-3 text-white">
-          5th Gen Camaro
+          5th Generation (2010–2015)
         </div>
         <div class="oramac-ss text-white">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Inspired heavily by the 1st-gen design—especially the front grille and stance.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Revived the Camaro name after an 8-year production hiatus.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              ZL1 version packed a 580 hp supercharged V8.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Transformers’ Bumblebee made this Camaro a pop-culture icon.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Camaro won the World Car Design of the Year in 2010.
             </li>
           </ul>
         </div>
+        <button class="btn btn-transparent border border-1 border-white text-white text-center oramac-ss scale" onclick="close('gen5')">
+          Close
+        </button>
       </div>
     </div>
     <div class="container-fluid d-flex align-items-center justify-content-center text-center position-absolute top-0 size fadeIn d-none" id="gen6">
       <img src="imgs/Gen6.jpg" class="img-fluid opacity-50 h-100 position-absolute z-0">
-      <div class="container">
+      <div class="container position-absolute z-1">
         <div class="oramac-3 text-white">
-          6th Gen Camaro
+          6th Generation (2016–2024)
         </div>
         <div class="oramac-ss text-white">
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Built on the lighter Alpha platform, shared with the Cadillac ATS.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              More compact and nimble than the 5th-gen—great for performance driving.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Offered the mighty ZL1 1LE: track-focused and ready to battle supercars.
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              Last manual transmission Camaro offered (as of 2024).
             </li>
           </ul>
           <ul>
             <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, rem.
+              2024 marks the end of the Camaro (again), but Chevy hints at a future revival (Electric YUKKY).
             </li>
           </ul>
         </div>
+        <button class="btn btn-transparent border border-1 border-white text-white text-center oramac-ss scale" onclick="close('gen6')">
+          Close
+        </button>
       </div>
     </div>
-    <footer class="">
+    <footer class="" id="footer">
       <div class="container-fluid text-white bg-333 fs-3 mt-5">
         <div class="row p-4 h-100">
           <div class="col-4">
