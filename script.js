@@ -44,7 +44,7 @@ function close(generation) {
   gen.classList.add('d-none');
 }
 
-const closeButtons = [
+let closeButtons = [
   document.getElementById('closeGen1'),
   document.getElementById('closeGen2'),
   document.getElementById('closeGen3'),
